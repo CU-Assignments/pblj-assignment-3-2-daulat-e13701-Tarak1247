@@ -1,0 +1,12 @@
+import javax.persistence.*;
+
+@Entity
+public class Account {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String holderName;
+    private double balance;
+
+    // Getters and Setters
+}
